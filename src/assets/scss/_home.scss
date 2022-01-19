@@ -52,6 +52,7 @@
 		background: white;
 		width: rem(250);
 		height: rem(280);
+		transition: all 0.2s;
 
 		img {
 			width: rem(175);
@@ -64,6 +65,13 @@
 			text-overflow: ellipsis;
 			font-size: 1.2rem;
 			font-weight: 500;
+		}
+
+		&:hover,
+		&:focus {
+			transform: scale(1.06);
+			background: #efefef;
+			box-shadow: rem(0) rem(0) rem(3) grey;
 		}
 	}
 
