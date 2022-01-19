@@ -1,0 +1,111 @@
+.Pagination {
+	justify-content: center;
+	margin: rem(20) rem(0) rem(25) !important;
+}
+.Page:hover {
+	border: none !important;
+}
+
+.homeWrap {
+	padding: rem(0) rem(35);
+}
+
+.searchHistory {
+	font-weight: 300;
+	font-size: 0.95rem;
+	max-width: rem(775);
+	margin: 0 auto;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.inputSearch {
+	margin-bottom: rem(7);
+	width: 95%;
+	max-width: 800px;
+	padding: rem(9) rem(8);
+	font-size: 1.15rem;
+}
+
+.mainGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	-moz-column-gap: rem(20);
+	column-gap: rem(30);
+	row-gap: rem(30);
+	justify-content: center;
+	justify-items: center;
+	max-width: rem(883);
+	margin: 0 auto;
+	margin-top: rem(65);
+	min-height: rem(996);
+
+	.gridItem {
+		text-align: center;
+		padding: rem(15);
+		border: rem(1) solid #0000004f;
+		box-shadow: rem(1) rem(1) rem(1) #929292;
+		cursor: pointer;
+		background: white;
+		width: rem(250);
+		height: rem(280);
+
+		img {
+			width: rem(175);
+			height: rem(215);
+		}
+
+		h2 {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+	}
+
+	@media screen and (max-width: 933px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		.gridItem {
+			width: rem(300);
+			height: rem(330);
+
+			img {
+				width: rem(225);
+				height: rem(265);
+			}
+		}
+	}
+
+	@media screen and (max-width: 730px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+
+		.gridItem {
+			width: rem(300);
+			height: rem(330);
+
+			img {
+				width: rem(225);
+				height: rem(265);
+			}
+		}
+	}
+
+	@media screen and (max-width: 340px) {
+		.gridItem {
+			width: rem(200);
+			height: rem(230);
+
+			img {
+				width: rem(125);
+				height: rem(165);
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+.zoomFadeIn {
+	transform: scale(1);
+	animation: zoomfade 0.25s linear;
+}
+
+.fadeIn {
+	opacity: 1;
+	animation: in 0.3s linear;
+}
+
+.leftFadeIn {
+	opacity: 1;
+	animation: leftin 0.25s linear;
+}
+
+.rightFadeIn {
+	opacity: 1;
+	animation: rightin 0.25s linear;
+}
+
+.topFadeIn {
+	opacity: 1;
+	animation: topin 0.3s linear;
+}
+
+.headerAnim {
+	opacity: 0;
+	animation: headera 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes headera {
+	from {
+		transform: scaleY(1.1) scaleX(1.1) skewY(0deg);
+		opacity: 1;
+	}
+	to {
+		transform: scaleY(1) scaleX(1) skewY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes topin {
+	0% {
+		opacity: 0;
+		transform: translateY(-5%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes leftin {
+	0% {
+		opacity: 0;
+		transform: translateX(-7%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes rightin {
+	0% {
+		opacity: 0;
+		transform: translateX(5%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomfade {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

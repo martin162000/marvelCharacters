@@ -1,0 +1,152 @@
+.detailsWrap {
+	padding: rem(0) rem(45);
+	@media screen and (max-width: 340px) {
+		padding: rem(0) rem(20);
+	}
+}
+
+.addToFavourite {
+	max-width: rem(1062);
+	margin: 0 auto;
+	display: flex;
+	margin-top: rem(11);
+	justify-content: end;
+
+	.btnFav {
+		padding: rem(8) rem(16);
+		background: #b7070a;
+		cursor: pointer;
+		font-weight: 300;
+		color: white;
+		transition: all 0.25s;
+
+		&:hover,
+		&:focus {
+			background: darken(#b7070a, 3%);
+			box-shadow: rem(0) rem(0) rem(3) black;
+			transform: scale(1.03);
+		}
+	}
+
+	@media screen and (max-width: 560px) {
+		margin-top: rem(14);
+		.btnFav {
+			width: 100%;
+		}
+	}
+}
+
+.details {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	max-width: rem(1000);
+	margin: 0 auto;
+	padding: rem(30);
+	border: rem(1) solid #cecece;
+	box-shadow: rem(0) rem(0) rem(8) #9292928f;
+	background: white;
+
+	.links {
+		margin-top: rem(20);
+		display: flex;
+	}
+
+	.urlLink {
+		text-transform: capitalize;
+		margin: rem(6);
+		//background: #b7070a;
+		color: white;
+		padding: rem(6) rem(10);
+		font-size: 0.8rem;
+		transition: all 0.25s;
+
+		&:hover,
+		&:focus {
+			box-shadow: rem(0) rem(0) rem(3) black;
+		}
+	}
+	.linkWrap:first-child {
+		.urlLink {
+			margin-left: 0;
+		}
+	}
+	.linkWrap:nth-child(1n + 0) {
+		.urlLink {
+			background: #b7070a;
+			&:hover,
+			&:focus {
+				background: lighten(#b7070a, 20%);
+			}
+		}
+	}
+	.linkWrap:nth-child(2n + 0) {
+		.urlLink {
+			background: black;
+			&:hover,
+			&:focus {
+				background: lighten(black, 20%);
+			}
+		}
+	}
+	.linkWrap:nth-child(3n + 0) {
+		.urlLink {
+			background: #123e81;
+			&:hover,
+			&:focus {
+				background: lighten(#123e81, 20%);
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.description {
+		text-align: left;
+	}
+
+	img {
+		width: rem(325);
+		max-width: 100%;
+		max-height: 100%;
+		height: rem(350);
+		@media screen and (max-width: 800px) {
+			width: rem(425);
+			height: rem(450);
+		}
+		@media screen and (max-width: 560px) {
+			max-width: rem(325);
+			max-height: rem(350);
+		}
+
+		@media screen and (max-width: 475px) {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		font-weight: 500;
+	}
+
+	.detailInfo {
+		margin-left: rem(30);
+		@media screen and (max-width: 800px) {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: rem(30);
+			max-width: rem(425);
+		}
+	}
+
+	@media screen and (max-width: 933px) {
+		grid-template-columns: 40% 60%;
+	}
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+}
